@@ -5,10 +5,8 @@ function ExpenseItem(props) {
   return (
     <div className={styles.expenseItem}>
       <ExpenseDate date={props.date} />
-      <div className={styles.expenseItem__description}>
-        <h2>{props.title}</h2>
-        <div className={styles.expenseItem__price}>$ {props.amount}</div>
-      </div>
+      <h2 className={styles.expenseItem__description}>{props.title}</h2>
+      <div className={styles.expenseItem__price}>$ {props.amount}</div>
     </div>
   );
 }
