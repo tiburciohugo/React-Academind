@@ -64,8 +64,14 @@ function ExpenseForm(props) {
             onChange={dateChangeHandler}
           />
         </div>
+
         <div className={styles.newExpense__actions}>
           <button type="submit">Add Expense</button>
+        </div>
+        <div className={styles.newExpense__actions}>
+          <button type="button" onClick={props.onCancel}>
+            Cancel
+          </button>
         </div>
       </div>
     </form>
